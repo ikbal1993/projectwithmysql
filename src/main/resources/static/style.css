@@ -1,4 +1,117 @@
-body {
-  background-color: powderblue;
+
+body{
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color:rgb(70, 49, 23)
+}
+
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color:rgb(10, 10, 69);
+    font-family: Arial, sans-serif;
+  }
+
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+
+  .icon1:hover{
+      background-color: rgb(97, 209, 209);
+
+  }
+
+  /* Hide the link on small screens */
+  @media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+  /* Icon */
+  .navbar a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  @media screen and (max-width: 600px) {
+    .navbar.responsive {
+      position: relative;
+    }
+    .navbar.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .navbar.responsive .active {
+      background-color: #ddd;
+      color:green;
+    }
+  }
+
+  form {
+    background-color: #b37b7b;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    max-width: 600px;
+    margin: 0 auto;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+.gender{
+    /* padding: 1px; */
+    width: 10%;
+    display:flex
+}
+.btn {
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+.btn:hover {
+    background-color: #3e8e41;
+}
+
+.container{
+	text-align: center;
+	margin-top: 50%;
+	text-align: bold;
+	background-color: green;
 }
 

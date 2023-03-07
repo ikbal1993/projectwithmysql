@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="ISO-8859-1">
-<title>Successfully Registered !!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" th:href="@{/style.css}">
+	<style>
+	</style>
 </head>
 <body>
+	<!-- Navbar -->
+	
+	<div class="navbar" id="myNavbar">
+		<a href="#" th:href="@{/customer/registration}" class="icon1">Home</a>
+		<a href="#" class="icon1" th:href="@{/customer/registration}">SignUp</a>
+		<a href="#" class="icon1">Login</a>
+		<a href="#" class="icon1">Contact</a>
+		<a href="#" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
+	
+	
+	<div class="container">
+	<h2> Thank you for successfully Registered</h2>
+	</div>
 
-<h3>Name : <span th:text="${customer.name}"></span></h3><br>
-<h3>Email : <span th:text="${customer.email}"></span></h3><br>
-<h3>Username : <span th:text="${customer.username}"></span></h3><br>
-<h3>Password : <span th:text="${customer.password}"></span></h3><br>
-<h3>Gender : <span th:text="${customer.gender}"></span></h3><br>
 
 </body>
 </html>

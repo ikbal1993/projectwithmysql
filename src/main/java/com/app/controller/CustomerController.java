@@ -19,6 +19,8 @@ public class CustomerController {
 	@Autowired
 	private CustomerRepository customerRepo;
 	
+	//"@{/customer/registration}"
+	
 	@GetMapping("/registration")
 	public String viewRegistration(Model model) {
 		Customer c= new Customer();
